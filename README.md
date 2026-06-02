@@ -1,72 +1,108 @@
-Student Grade Tracker
-A Java application that tracks student grades and generates a comprehensive report with statistics and letter grades.
+# Student Grade Tracker
 
-Features
-Student Management: Add multiple students with their names and marks
-Input Validation: Ensures marks are between 0 and 100
-Grading System: Automatically assigns letter grades based on marks:
-A: 90-100
-B: 75-89
-C: 50-74
-F: Below 50
-Statistics: Calculates and displays:
-Average marks across all students
-Highest marks
-Lowest marks
-Comprehensive Report: Displays a detailed report for each student
-Requirements
-Java 8 or higher
-A terminal/command prompt to run the program
-How to Run
-Compile the program:
+## Overview
 
+Student Grade Tracker is a Java-based console application that helps manage student records and analyze academic performance. The program allows users to add student details, calculate grades, search for students, generate reports, rank students based on marks, and store data permanently using file handling.
+
+## Features
+
+* Add student records
+* Validate marks input (0–100)
+* Calculate grades automatically
+* Search students by name
+* Generate detailed student reports
+* Calculate:
+
+  * Average Marks
+  * Highest Marks
+  * Lowest Marks
+* Display student rankings
+* Save student data to a file
+* Load existing student data automatically on startup
+* Menu-driven interface
+* Uses Object-Oriented Programming concepts
+
+## Technologies Used
+
+* Java
+* ArrayList Collection Framework
+* File Handling (FileWriter, FileReader, BufferedReader)
+* Object-Oriented Programming (OOP)
+
+## OOP Concepts Implemented
+
+* Classes and Objects
+* Encapsulation
+* Methods
+* Collections (ArrayList)
+
+## Project Structure
+
+StudentGradeTracker.java
+students.txt
+
+## How to Run
+
+### Compile the Program
+
+```bash
 javac StudentGradeTracker.java
-Run the program:
+```
 
+### Run the Program
+
+```bash
 java StudentGradeTracker
-Follow the prompts:
+```
 
-Enter the number of students
-For each student, enter their name and marks (0-100)
-The program will display a comprehensive grade report with statistics
-Example Output
-Enter number of students: 3
+## Sample Output
 
-Student 1
-Enter student name: Alice
-Enter marks: 85
+```text
+===== STUDENT GRADE TRACKER =====
 
-Student 2
-Enter student name: Bob
-Enter marks: 92
+===== MENU =====
+1. Add Student
+2. View Report
+3. Search Student
+4. Exit
 
-Student 3
-Enter student name: Charlie
-Enter marks: 78
+Enter your choice: 1
 
+Enter student name: Arun
+Enter marks (0-100): 85
+
+Student added successfully!
+```
+
+## Student Report Example
+
+```text
 ===== STUDENT REPORT =====
-----------------------
-Student Name : Alice
+
+Student Name : Arun
 Marks        : 85
 Grade: B
-----------------------
-Student Name : Bob
-Marks        : 92
-Grade: A
-----------------------
-Student Name : Charlie
-Marks        : 78
-Grade: B
 
-Average Marks: 85.0
-Highest Marks: 92
-Lowest Marks: 78
-Code Structure
-Student Class: Simple model class that stores student name and marks
-StudentGradeTracker Class: Main application class that handles:
-User input
-Grade calculation
-Statistics computation
-Report generation
-Input Validation
-The program validates that marks are within the range of 0-100. Invalid entries will be rejected, and the user will be prompted to re-enter the data for that student.
+Average Marks: 85.00
+Highest Marks: 85
+Lowest Marks: 85
+
+===== STUDENT RANKING =====
+Rank 1: Arun - 85
+```
+
+## Future Enhancements
+
+* Java Swing GUI
+* Edit and delete student records
+* Export reports to PDF
+* Database integration using MySQL
+* Graphical performance analysis
+
+## Author
+
+Sainath Reddy
+
+## License
+
+This project is created for educational and internship purposes.
